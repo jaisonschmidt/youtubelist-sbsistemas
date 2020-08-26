@@ -1,0 +1,75 @@
+<!-- 
+    https://cdnjs.com/libraries/meyer-reset
+
+    https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+    https://fontawesome.com/v4.7.0/icons/
+
+    https://material.io/design/color/the-color-system.html#color-theme-creation
+
+    https://www.cssmatic.com/box-shadow
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YoutubeList</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header__main">
+      <div>Youtube<span class="logo__aux">List</span></div>
+
+      <button class="btn__clean" data-clean-music title="Limpar lista">
+        <i class="fa fa-undo"></i>
+      </button>
+    </header>
+
+    <section>
+      <iframe
+        width="100%"
+        src="https://www.youtube.com/embed/1qag-o1kfQY"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <main class="main__wrapper" id="musicWrapper"></main>
+
+    <footer class="footer__main">
+      <button type="button" class="btn btn__primary btn__add">
+        Adicionar <i class="fa fa-plus"></i>
+      </button>
+
+      <form class="form__new-video" style="display: none">
+        <div class="form-group">
+          <label for="">Titulo do vídeo:</label>
+          <input type="text" />
+        </div>
+        <div class="form-group">
+          <label for="">Código do vídeo:</label>
+          <input type="text" />
+        </div>
+        <button type="submit" class="btn btn__primary">Cadastrar</button>
+      </form>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
