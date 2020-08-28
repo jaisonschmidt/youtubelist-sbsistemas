@@ -10,6 +10,10 @@ body {
   font-size: 16px;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .btn {
   border: none;
   padding: 1rem;
